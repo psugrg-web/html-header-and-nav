@@ -41,7 +41,8 @@ header {
 
 header li,
 a,
-button {
+button, 
+.button {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     font-size: large;
@@ -66,11 +67,11 @@ button {
     text-decoration: underline;
 }
 
-.session form {
+.session form, a {
     display: inline-block;
 }
 
-button {
+button, .button {
     padding: 0.6ch 1.2ch;
     border-style: solid;
     border-width: 1px;
@@ -80,7 +81,7 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+button:hover, .button:hover {
     background-color: var(--text-color-header);
     color: #202124;
     transition: all 0.3s ease 0s;
