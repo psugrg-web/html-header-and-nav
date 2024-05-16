@@ -34,7 +34,7 @@ header {
         margin: auto;
     }
 
-    header .registration {
+    header .session {
         order: 2;
     }
 }
@@ -66,7 +66,7 @@ button {
     text-decoration: underline;
 }
 
-.registration form {
+.session form {
     display: inline-block;
 }
 
