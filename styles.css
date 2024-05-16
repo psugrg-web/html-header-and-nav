@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
+:root {
+    --bg-color-main: #202124;
+    --text-color-header: #edf0f1;
+    --text-color-content: #edf0f1;
+}
+
 * {
     box-sizing: border-box;
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background-color: #202124;
+    background-color: var(--bg-color-main);
 }
 
 header {
@@ -39,7 +45,7 @@ button {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     font-size: large;
-    color: #edf0f1;
+    color: var(--text-color-header);
     text-decoration: none;
 }
 
@@ -68,14 +74,14 @@ button {
     padding: 0.6ch 1.2ch;
     border-style: solid;
     border-width: 1px;
-    border-color: #edf0f1;
+    border-color: var(--text-color-header);
     border-radius: 2ch;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
 button:hover {
-    background-color: #edf0f1;
+    background-color: var(--text-color-header);
     color: #202124;
     transition: all 0.3s ease 0s;
 }
