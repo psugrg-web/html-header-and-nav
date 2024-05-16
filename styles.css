@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #202124;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        order: 3;
+        padding-top: 1ch;
+        margin: auto;
+    }
+
+    header .registration {
+        order: 2;
+    }
+}
+
+header li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: large;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 1ch;
+}
+
+.nav_links li a:hover {
+    text-decoration: underline;
+}
+
+.registration form {
+    display: inline-block;
+}
+
+button {
+    padding: 0.6ch 1.2ch;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #edf0f1;
+    border-radius: 2ch;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #edf0f1;
+    color: #202124;
+    transition: all 0.3s ease 0s;
+}
