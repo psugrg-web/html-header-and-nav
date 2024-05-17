@@ -20,7 +20,7 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 5%;
+    padding: 2ch 1ch;
 }
 
 @media (max-width: 700px) {
@@ -48,6 +48,16 @@ button,
     font-size: large;
     color: var(--text-color-header);
     text-decoration: none;
+}
+
+.content {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    color: var(--text-color-header);
+
+    max-width: 80ch;
+    margin: auto;
+    padding: 1ch;
 }
 
 .logo {
