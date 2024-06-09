@@ -7,6 +7,11 @@
 }
 
 * {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+body {
     box-sizing: border-box;
     overflow: hidden;
     margin: 0;
@@ -23,67 +28,38 @@ header {
     padding: 2ch 1ch;
 }
 
-@media (max-width: 700px) {
-    header {
-        flex-wrap: wrap;
-    }
-
-    header nav {
-        order: 3;
-        padding-top: 1ch;
-        margin: auto;
-    }
-
-    header .session {
-        order: 2;
-    }
-}
-
-header li,
-a,
-button,
-.button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 200;
+a, button {
     font-size: large;
     color: var(--text-color-header);
-    text-decoration: none;
+    background-color: var(--bg-color-main);
 }
 
-.content {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 200;
+div {
     color: var(--text-color-header);
-
     max-width: 80ch;
     margin: auto;
     padding: 1ch;
 }
 
-.logo {
-    cursor: pointer;
-}
-
-.nav_links {
-    list-style: none;
-}
-
-.nav_links li {
+nav * {
     display: inline-block;
     padding: 0 1ch;
 }
 
-.nav_links li a:hover {
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul a:hover {
     text-decoration: underline;
 }
 
-.session form,
-a {
-    display: inline-block;
-}
-
 button,
-.button {
+nav > a {
     padding: 0.6ch 1.2ch;
     border-style: solid;
     border-width: 1px;
@@ -94,7 +70,7 @@ button,
 }
 
 button:hover,
-.button:hover {
+nav > a:hover {
     background-color: var(--text-color-header);
     color: var(--bg-color-main);
     transition: all 0.3s ease 0s;
