@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 :root {
-    --bg-color-main: #202124;
-    --text-color-header: #edf0f1;
-    --text-color-content: #edf0f1;
+    --bg-color: #202124;
+    --bg-color-alt: #edf0f1;
+    --text-color: #edf0f1;
 }
 
 * {
@@ -16,7 +16,7 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background-color: var(--bg-color-main);
+    background-color: var(--bg-color);
 }
 
 header {
@@ -26,16 +26,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2ch 1ch;
+    color: var(--text-color);
 }
 
 a, button {
     font-size: large;
-    color: var(--text-color-header);
-    background-color: var(--bg-color-main);
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 div {
-    color: var(--text-color-header);
+    color: var(--text-color);
     max-width: 80ch;
     margin: auto;
     padding: 1ch;
@@ -63,7 +64,7 @@ nav > a {
     padding: 0.6ch 1.2ch;
     border-style: solid;
     border-width: 1px;
-    border-color: var(--text-color-header);
+    border-color: var(--text-color);
     border-radius: 2ch;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -71,7 +72,19 @@ nav > a {
 
 button:hover,
 nav > a:hover {
-    background-color: var(--text-color-header);
-    color: var(--bg-color-main);
+    background-color: var(--text-color);
+    color: var(--bg-color);
     transition: all 0.3s ease 0s;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 3rem;
+    border-radius: 4px;
+    background-color: var(--bg-color-alt);
+}
+
+textarea:focus {
+    outline: none;
 }

@@ -22,6 +22,7 @@
             </ul>
         </nav>
         <nav>
+            text
             <form action="#">
                 <button>Register</button>
             </form>
@@ -29,7 +30,21 @@
         </nav>
     </header>
     <div>
-        <h1>Test</h1>
+        <h1>Form with text entry</h1>
+        <form method="POST" action="/list">
+            <!-- Name is important here since it's used to automatically generate a POST request -->
+            <label for="product">Product</label>
+            <textarea id="product" name="product" required>Heres a text!</textarea>
+            <p>
+                some extra text
+            </p>
+            <p>
+                <button type="submit">Add</button>
+            </p>
+        </form>
+    </div>
+    <div>
+        <h1>Text</h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquam quod ipsum eum similique, dolore atque
         inventore nemo delectus modi. Neque iusto aut perspiciatis ducimus soluta, dolorum animi unde modi!
         <a href="#">Test</a>
