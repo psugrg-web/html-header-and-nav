@@ -29,55 +29,68 @@
             <a class="button" href="#">Login</a>
         </nav>
     </header>
-<div>
-<h1> Shopping List </h1>
 
-<table>
-    <tbody>
-        <tr>
-            <td>
-                This is a text
-            </td>
-            <td>
-                This is a text
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="#">jajka</a>
-            </td>
-            <td>
-                <form method="POST">
-                    <input type="hidden" name="_method" value="DELETE">
-                    <input type="hidden" name="id" value="31">
-                    <button>Delete</button>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="#">test</a>
-            </td>
-            <td>
-                <form method="POST">
-                    <input type="hidden" name="_method" value="DELETE">
-                    <input type="hidden" name="id" value="35">
-                    <button>Delete</button>
-                </form>
-            </td>
-        </tr>
-    </tbody>
-</table>
+    <div>
+        <h1>Log In</h1>
+        <form action="" method="post">
+                <input id="email" 
+                    name="email" 
+                    type="email" 
+                    autocomplete="email" 
+                    required="" 
+                    placeholder="Email address" 
+                    value="">
+                <input id="password" name="password" type="password" autocomplete="current-password" required="" placeholder="Password">
+                <button type="submit">Submit</button>
+        </form>
+    </div>
 
-<nav>
-    <!-- anchor as a direct child of `nav` will be styled as a button -->
-    <a href="#">Add product</a>
-</nav>
-<!-- where a standalone anchor will be styled as link -->
-<a href="#">go to that page</a>
+    <div>
+    <h1> Shopping List </h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    This is a text
+                </td>
+                <td>
+                    This is a text
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">jajka</a>
+                </td>
+                <td>
+                    <form method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <input type="hidden" name="id" value="31">
+                        <button>Delete</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">test</a>
+                </td>
+                <td>
+                    <form method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <input type="hidden" name="id" value="35">
+                        <button>Delete</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <nav>
+        <!-- anchor as a direct child of `nav` will be styled as a button -->
+        <a href="#">Add product</a>
+    </nav>
+    <!-- where a standalone anchor will be styled as link -->
+    <a href="#">go to that page</a>
+    </div>
 
-
-</div>
     <div>
         <h1>Form with text entry</h1>
         <form method="POST" action="#">
@@ -92,6 +105,7 @@
             </p>
         </form>
     </div>
+
     <div>
         <h1>Text</h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquam quod ipsum eum similique, dolore atque

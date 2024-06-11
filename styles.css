@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 :root {
     --bg-color: #202124;
@@ -9,7 +9,7 @@
 
 * {
     font-family: "Montserrat", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 body {
@@ -31,7 +31,7 @@ header {
 }
 
 a, button {
-    font-size: large;
+    font-size: 1rem;
     color: var(--text-color);
     background-color: var(--bg-color);
 }
@@ -45,11 +45,11 @@ div {
 
 nav * {
     display: inline-block;
-    padding: 0 1ch;
 }
 
 nav li {
     list-style: none;
+    padding: 0 1ch;
 }
 
 nav a {
@@ -80,15 +80,22 @@ nav > a:hover {
     transition: all 0.3s ease 0s;
 }
 
+input,
 textarea {
-    width: 100%;
-    resize: vertical;
-    min-height: 3rem;
+    padding-top: 0.8vh;
+    padding-bottom: 0.8vh;
     border-radius: 4px;
     background-color: var(--bg-color-alt);
 }
 
-textarea:focus {
+textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 3rem;
+}
+
+textarea:focus,
+input:focus {
     outline: none;
 }
 
