@@ -29,9 +29,58 @@
             <a class="button" href="#">Login</a>
         </nav>
     </header>
+<div>
+<h1> Shopping List </h1>
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                This is a text
+            </td>
+            <td>
+                This is a text
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#">jajka</a>
+            </td>
+            <td>
+                <form method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <input type="hidden" name="id" value="31">
+                    <button>Delete</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#">test</a>
+            </td>
+            <td>
+                <form method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <input type="hidden" name="id" value="35">
+                    <button>Delete</button>
+                </form>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<nav>
+    <!-- anchor as a direct child of `nav` will be styled as a button -->
+    <a href="#">Add product</a>
+</nav>
+<!-- where a standalone anchor will be styled as link -->
+<a href="#">go to that page</a>
+
+
+</div>
     <div>
         <h1>Form with text entry</h1>
-        <form method="POST" action="/list">
+        <form method="POST" action="#">
             <!-- Name is important here since it's used to automatically generate a POST request -->
             <label for="product">Product</label>
             <textarea id="product" name="product" required>Heres a text!</textarea>

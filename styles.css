@@ -2,6 +2,7 @@
 
 :root {
     --bg-color: #202124;
+    --bg-color-highlight: #2a2c30;
     --bg-color-alt: #edf0f1;
     --text-color: #edf0f1;
 }
@@ -87,4 +88,23 @@ textarea {
 
 textarea:focus {
     outline: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0.3vh 1vw;
+}
+
+tr:hover td,
+tr:hover a,
+tr:hover form {
+    background-color: var(--bg-color-highlight);
+}
+
+td form {
+    text-align: right;
 }
