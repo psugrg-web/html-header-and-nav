@@ -63,6 +63,8 @@ nav ul a:hover {
 button,
 nav > a {
     padding: 0.6ch 1.2ch;
+    margin-top: 0.5ch;
+    margin-bottom: 0.5ch;
     border-style: solid;
     border-width: 1px;
     border-color: var(--text-color);
