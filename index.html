@@ -31,8 +31,9 @@
     </header>
 
     <div>
-        <h1>Log In</h1>
+        <h1>Log In Form</h1>
         <form action="" method="post">
+                <label for="email">Email</label>
                 <input id="email" 
                     name="email" 
                     type="email" 
@@ -40,21 +41,38 @@
                     required="" 
                     placeholder="Email address" 
                     value="">
+                <label for="password">Password</label>
                 <input id="password" 
                     name="password" 
                     type="password" 
                     autocomplete="current-password" 
                     required="" 
                     placeholder="Password">
+                <b>Bold text in <i>FORM</i> is RED</b>
                 <nav>
                     <button type="submit">Submit</button>
+                    <a href="#">Cancel</a>
                 </nav>
-                <p>Text</p>
+                <p>Normal text is in default color</p>
         </form>
     </div>
 
     <div>
-    <h1> Shopping List </h1>
+        <h1>Form With Text Entry</h1>
+        <form method="POST" action="#">
+            <!-- Name is important here since it's used to automatically generate a POST request -->
+            <label for="product">Product</label>
+            <textarea id="product" name="product" required>Heres a text!</textarea>
+            <b>Bold text in <i>FORM</i> is RED</b>
+            <nav>
+                <button type="submit">Add</button>
+                <a href="#">Cancel</a>
+            </nav>
+        </form>
+    </div>
+
+    <div>
+    <h1>Table</h1>
     <table>
         <tbody>
             <tr>
@@ -67,26 +85,26 @@
             </tr>
             <tr>
                 <td>
-                    <a href="#">jajka</a>
+                    <a href="#">That's an anchor</a>
                 </td>
                 <td>
                     <form method="POST">
                         <input type="hidden" name="_method" value="DELETE">
                         <input type="hidden" name="id" value="31">
-                        <button>Delete</button>
+                        <button>That's a button</button>
                     </form>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="#">test</a>
+                    <a href="#">That's an anchor</a>
                 </td>
                 <td>
                     <nav>
                         <form method="POST">
                             <input type="hidden" name="_method" value="DELETE">
                             <input type="hidden" name="id" value="35">
-                            <button>Delete</button>
+                            <button>Button</button>
                         </form>
                     </nav>
                 </td>
@@ -102,21 +120,17 @@
     </div>
 
     <div>
-        <h1>Form with text entry</h1>
-        <form method="POST" action="#">
-            <!-- Name is important here since it's used to automatically generate a POST request -->
-            <label for="product">Product</label>
-            <textarea id="product" name="product" required>Heres a text!</textarea>
-            <p>
-                some extra text
-            </p>
-            <p>
-                <nav>
-                    <button type="submit">Add</button>
-                </nav>
-                <button type="submit">Button</button>
-            </p>
-        </form>
+        <h1>Buttons And Links</h1>
+        <p>
+            Link can be placed directly in text <a href="#">using anchors</a> or <button>buttons</button>.
+        </p>
+        <b>
+            To create a button, add it to <i>NAV</i>:
+            <nav>
+                <button>Button as button</button>
+                <a href="#">Anchor as button</a>
+            </nav>
+        </b>
     </div>
 
     <div>
