@@ -9,12 +9,12 @@
 }
 
 * {
+    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
 }
 
 body {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
@@ -41,7 +41,7 @@ div {
     color: var(--text-color);
     max-width: 80ch;
     margin: auto;
-    padding: 1ch;
+    padding: 5vw;
 }
 
 nav {
