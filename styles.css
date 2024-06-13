@@ -133,7 +133,8 @@ tr:hover form {
     background-color: var(--bg-color-highlight);
 }
 
-form b {
+form b,
+form b * {
     color: var(--text-color-red);
     font-weight: bold;
 }
