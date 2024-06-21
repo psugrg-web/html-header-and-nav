@@ -31,7 +31,15 @@ header {
     color: var(--text-color);
 }
 
-a, button {
+/* For larger screens */
+@media only screen and (min-width: 85ch) {
+    header {
+        padding: 2ch 3ch;
+    }
+}
+
+a,
+button {
     font-size: 1rem;
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -75,7 +83,7 @@ button:not(nav button) {
 }
 
 nav button,
-nav > a {
+nav>a {
     padding: 0.6ch 1.2ch;
     margin-top: 0.5ch;
     margin-bottom: 0.5ch;
@@ -88,7 +96,7 @@ nav > a {
 }
 
 nav button:hover,
-nav > a:hover {
+nav>a:hover {
     background-color: var(--text-color);
     color: var(--bg-color);
     transition: all 0.3s ease 0s;
@@ -123,7 +131,8 @@ table {
     margin-bottom: 0.5vh;
 }
 
-td, th {
+td,
+th {
     border-bottom: 1px solid var(--text-color);
 }
 
