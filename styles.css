@@ -35,7 +35,7 @@ header {
 }
 
 header > img {
-    visibility: hidden;
+    display: none;
 }
 
 /* For larger screens */
@@ -44,7 +44,7 @@ header > img {
         padding: 2ch 3ch;
     }
     header > img {
-        visibility: visible;
+        display: flex;
     }
 }
 
