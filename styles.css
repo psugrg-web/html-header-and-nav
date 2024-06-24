@@ -10,7 +10,6 @@
 }
 
 * {
-    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
 }
@@ -28,23 +27,37 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 2ch 1ch;
+    padding: 2ch 3ch;
     color: var(--text-color);
     background-color: var(--accent-color);
     box-shadow: 0px 5px 8px var(--bg-color-highlight);
 }
 
-header > img {
-    display: none;
+nav,
+nav ul {
+        gap: 1rem;
 }
 
-/* For larger screens */
-@media only screen and (min-width: 85ch) {
+@media only screen and (max-width: 80ch) {
     header {
-        padding: 2ch 3ch;
+        position: fixed;
+        inset: 0 0 0 0;
     }
     header > img {
-        display: flex;
+        display: none;
+    }
+    header * {
+        margin: auto;
+    }
+    header nav, 
+    header nav ul {
+        flex-direction: column;
+    }
+    nav p {
+        padding-top: 1rem;
+        width: 60vw;
+        border-top: 1px solid var(--text-color);
+        text-align: center;
     }
 }
 
@@ -61,18 +74,17 @@ div {
     padding: 1ch;
 }
 
-nav {
-    text-align: right;
-}
-
-nav * {
-    display: inline-block;
+nav, nav ul {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    padding: 0;
+    justify-content: right;
 }
 
 nav li,
 nav p {
     list-style: none;
-    padding: 0 1ch;
 }
 
 nav a {
@@ -95,8 +107,6 @@ button:not(nav button) {
 nav button,
 nav>a {
     padding: 0.6ch 1.2ch;
-    margin-top: 0.5ch;
-    margin-bottom: 0.5ch;
     border-style: solid;
     border-width: 1px;
     border-color: var(--text-color);
@@ -145,6 +155,8 @@ table {
 td,
 th {
     border-bottom: 1px solid var(--text-color);
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
 }
 
 tr:hover td,
