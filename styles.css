@@ -161,6 +161,10 @@ form span {
         display: none;
     }
 
+    .primary-nav-scroll-disable {
+        overflow: hidden;
+    }
+
     .primary-nav span {
         padding-top: 1rem;
         width: 60vw;
@@ -169,8 +173,7 @@ form span {
     }
 
     .primary-nav{
-        position: fixed;
-        margin-top: 5.5rem;
+        padding-top: 5.5rem;
         inset: 0 0 0 0;
         background: var(--accent-color);
         z-index: 1000;
@@ -178,6 +181,7 @@ form span {
     }
 
     .primary-nav[data-visible="true"] {
+        position: fixed;
         transform: translateY(0%);
     }
 
