@@ -161,7 +161,7 @@ form span {
         display: none;
     }
 
-    nav span {
+    .primary-nav span {
         padding-top: 1rem;
         width: 60vw;
         border-top: 1px solid var(--text-color);
