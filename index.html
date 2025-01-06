@@ -40,6 +40,23 @@
     </div>
 
     <div>
+        <h1>Simple Form</h1>
+        <form method="POST" action="#">
+            <!-- NOTE: the name is important here since it's used to automatically generate a POST request -->
+            <label for="product-name">Product name</label>
+            <input id="product-name" name="product-name" type="text" required="" placeholder="Product name"
+                value="">
+            <label for="product-description">Product description</label>
+            <textarea id="product-description" name="product" required>Heres a text!</textarea>
+            <span>Text inside <b><i>span</i> element in <i>form</i></b> is RED</span>
+            <nav>
+                <button type="submit">Add</button>
+                <a href="#">Cancel</a>
+            </nav>
+        </form>
+    </div>
+
+    <div>
         <h1>Log In Form</h1>
         <form action="" method="post">
             <label for="email">Email</label>
@@ -54,20 +71,6 @@
                 <a href="#">Cancel</a>
             </nav>
             <p>Normal text is in default color</p>
-        </form>
-    </div>
-
-    <div>
-        <h1>Form With Text Entry</h1>
-        <form method="POST" action="#">
-            <!-- Name is important here since it's used to automatically generate a POST request -->
-            <label for="product">Product</label>
-            <textarea id="product" name="product" required>Heres a text!</textarea>
-            <span>Text inside <b><i>span</i> element in <i>form</i></b> is RED</span>
-            <nav>
-                <button type="submit">Add</button>
-                <a href="#">Cancel</a>
-            </nav>
         </form>
     </div>
 
