@@ -48,7 +48,7 @@
                 value="">
             <label for="product-description">Product description</label>
             <textarea id="product-description" name="product" required>Heres a text!</textarea>
-            <span>Text inside <b><i>span</i> element in <i>form</i></b> is RED</span>
+            <p class="danger">Error message</p>
             <nav>
                 <button type="submit">Add</button>
                 <a href="#">Cancel</a>
@@ -65,7 +65,7 @@
             <label for="password">Password</label>
             <input id="password" name="password" type="password" autocomplete="current-password" required=""
                 placeholder="Password">
-            <span>Text inside <b><i>span</i> element in <i>form</i></b> is RED</span>
+            <p class="danger">Error message</p>
             <nav>
                 <button type="submit">Submit</button>
                 <a href="#">Cancel</a>
@@ -159,6 +159,10 @@
         <button type="submit">Button</button>
         Neque iusto aut perspiciatis ducimus soluta, dolorum animi unde modi!
         <a href="#">Test</a>
+
+        <h2>Text styles</h2>
+        <p>Text styles can be selected by using the following class names: <i>danger, caution, safe, info</i>. Text without a name will have a default style.</p>
+        <p><span class="danger">danger</span>; <i class="caution">caution</i>; <b class="safe">safe</b>; <u class="info">Info</u>; default</p>
     </div>
 
     <div>
