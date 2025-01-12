@@ -158,18 +158,69 @@
 
     <div>
         <h1>Text</h1>
+        <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquam quod ipsum eum similique, dolore atque
         inventore nemo delectus modi.
         <button type="submit">Button</button>
         Neque iusto aut perspiciatis ducimus soluta, dolorum animi unde modi!
         <a href="#">Test</a>
-
+        </p>
         <h2>Text styles</h2>
         <p>Text styles can be selected by using the following class names: <i>danger, caution, safe, info</i>. Text without a name will have a default style.</p>
         <p><span class="danger">danger</span>; <i class="caution">caution</i>; <b class="safe">safe</b>; <u class="info">Info</u>; default</p>
     </div>
 
     <div>
+        <h1>Sections</h1>
+        <p>Sections are created using the <i>div</i> html tag. They are the building blocks for the whole layout. Use them to organize content on the page.</p>
+    </div>
+    <div>
+        <h2>Section styles</h2>
+        <p>Section styles can be selected by using the following class names: <i>danger, caution, safe, info</i>. Text without a name will have a default style.</p>
+    </div>
+    <div>Default style</div>
+    <div class="danger">Danger style</div>
+    <div class="caution">Caution style</div>
+    <div class="safe">Safe style</div>
+    <div class="info">Info style</div>
+
+    <div>
+        <h2>Section nesting</h2>
+        <p>Sections can be nested to create more complex layouts.</p>
+    </div>
+    <div class="info">
+        Section lvl 0
+        <div class="caution">
+            Section lvl 1
+            <div class="caution">
+                Section lvl 2
+                <div class="danger">
+                    Section lvl 3
+                    <div>
+                        Section lvl 3
+                        <div class="safe">
+                            Section lvl 4
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <p>Note that section colors are semi-transparent hence they're mixing with each other.
+            however, section without a class (default style) will always reset the style back
+            to default color.
+        </p>
+        <p>It can be used to create frames:</p>
+    </div>
+
+    <div class="danger">
+        <div>Frame</div>
+    </div>
+
+    <div>
+        <h1>Headings</h1>
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
