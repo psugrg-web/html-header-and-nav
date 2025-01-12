@@ -260,6 +260,12 @@ tr:hover {
     display: none;
 }
 
+hr {
+    background: var(--text-color);
+    height: 1px;
+    border-width: 0;
+}
+
 @media only screen and (max-width: 80ch) {
     header {
         height: 5.5rem;
