@@ -18,9 +18,15 @@ navToggle.addEventListener('click', () => {
 const lightThemeButton = document.querySelector('.light-theme');
 lightThemeButton.addEventListener('click', () => {
     body.classList.replace('dark-mode', 'light-mode');
+
+    lightThemeButton.classList.add('active');
+    darkThemeButton.classList.remove('active');
 });
 
 const darkThemeButton = document.querySelector('.dark-theme');
 darkThemeButton.addEventListener('click', () => {
     body.classList.replace('light-mode', 'dark-mode');
+
+    darkThemeButton.classList.add('active');
+    lightThemeButton.classList.remove('active');
 });
