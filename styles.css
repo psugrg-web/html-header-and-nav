@@ -137,7 +137,8 @@ nav a {
     text-decoration: none;
 }
 
-nav ul a:hover {
+nav ul a:hover,
+nav ul a.active {
     text-decoration: underline;
 }
 
@@ -177,27 +178,37 @@ nav button.info,
 nav>a.info{
     color: var(--text-color);
 }
+nav button.active,
+nav>a.active,
 nav button:hover,
 nav>a:hover {
     background-color: var(--text-color);
     color: var(--bg-color);
     transition: all 0.3s ease 0s;
 }
+nav button.danger.active,
+nav>a.danger.active,
 nav button.danger:hover,
 nav>a.danger:hover{
     background-color: var(--accent-color-danger);
     color: var(--text-color);
 }
+nav button.caution.active,
+nav>a.caution.active,
 nav button.caution:hover,
 nav>a.caution:hover{
     background-color: var(--accent-color-caution);
     color: var(--text-color);
 }
+nav button.safe.active,
+nav>a.safe.active,
 nav button.safe:hover,
 nav>a.safe:hover{
     background-color: var(--accent-color-safe);
     color: var(--text-color);
 }
+nav button.info.active,
+nav>a.info.active,
 nav button.info:hover,
 nav>a.info:hover{
     background-color: var(--accent-color-info);
@@ -225,10 +236,30 @@ header nav button.info,
 header nav>a.info {
     color: var(--top-bar-text-color);
 }
+header nav button.active,
+header nav>a.active,
 header nav button:hover,
 header nav>a:hover {
     background-color: var(--top-bar-text-color);
     color: var(--top-bar-color);
+}
+header nav button.danger.active,
+header nav>a.danger.active,
+header nav button.danger:hover,
+header nav>a.danger:hover,
+header nav button.caution.active,
+header nav>a.caution.active,
+header nav button.caution:hover,
+header nav>a.caution:hover,
+header nav button.safe.active,
+header nav>a.safe.active,
+header nav button.safe:hover,
+header nav>a.safe:hover,
+header nav button.info.active,
+header nav>a.info.active,
+header nav button.info:hover,
+header nav>a.info:hover {
+    color: var(--top-bar-text-color);
 }
 
 input,
