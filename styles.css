@@ -3,13 +3,13 @@
 :root {
     /* Configuration variables */
     /* Top Bar */
-    --top-bar-color: rgb(0, 71, 119);
+    --top-bar-color: rgb(20, 28, 37);
     --top-bar-text-color: #f1f7ff;
 
     /* Content Light Mode */
-    --light-mode-bg-color: #f7f7ff;
+    --light-mode-bg-color: #f0f2f7;
     --light-mode-bg-color-alt: #ffffff;
-    --light-mode-text-color: #282833;
+    --light-mode-text-color: #17171b;
     
     --light-mode-accent-info: #1182ce;
     --light-mode-accent-safe: #00a028;
