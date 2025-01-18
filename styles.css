@@ -3,13 +3,13 @@
 :root {
     /* Configuration variables */
     /* Top Bar */
-    --top-bar-color: black;
-    --top-bar-text-color: #edf0f1;
+    --top-bar-color: rgb(0, 71, 119);
+    --top-bar-text-color: #f1f7ff;
 
     /* Content Light Mode */
-    --light-mode-bg-color: #ededf0;
-    --light-mode-bg-color-alt: #e6e8e9;
-    --light-mode-text-color: #1f1f1f;
+    --light-mode-bg-color: #f7f7ff;
+    --light-mode-bg-color-alt: #ffffff;
+    --light-mode-text-color: #282833;
     
     --light-mode-accent-info: #1182ce;
     --light-mode-accent-safe: #00a028;
@@ -208,6 +208,22 @@ header nav button,
 header nav>a {
     background-color: var(--top-bar-color);
     border-color: var(--top-bar-text-color);
+}
+header nav button.danger,
+header nav>a.danger {
+    color: var(--top-bar-text-color);
+}
+header nav button.caution,
+header nav>a.caution {
+    color: var(--top-bar-text-color);
+}
+header nav button.safe,
+header nav>a.safe {
+    color: var(--top-bar-text-color);
+}
+header nav button.info,
+header nav>a.info {
+    color: var(--top-bar-text-color);
 }
 header nav button:hover,
 header nav>a:hover {
